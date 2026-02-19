@@ -1,0 +1,52 @@
+<script setup lang="ts">
+
+    const route = useRoute()
+
+    const isActive = (path: string) => {
+        return route.path === path
+    }
+    const linkClass = "pb-1 border-b-2 border-transparent text-purple-500 text-xl hover:border-purple-400 hover:text-purple-400 transition"
+    const activeLinkClass = "pb-1 border-b-2 border-purple-500 text-purple-400 text-xl"
+
+</script>
+
+<template>
+    <nav class="bg-zinc-800 shadow-md">
+        <div class=" mx-auto lg:px-14 py-2 px-4">
+            <div class="flex items-center justify-between h-16">
+
+                <div class="flex items-center gap-1 text-purple-500 text-xl font-semibold">
+                    <Icon name="tabler:code" class="text-2xl" />
+                    DevLog
+                </div>
+
+                <div class="hidden md:flex space-x-10">
+                    <NuxtLink
+                     to="/" 
+                     :class="isActive('/') ? activeLinkClass : linkClass"
+                     >
+                     Home
+                    </NuxtLink>
+                    <NuxtLink
+                     to="/dashboard" 
+                     :class="isActive('/dashboard') ? activeLinkClass : linkClass"
+                     >
+                     Dashboard
+                    </NuxtLink>
+                </div>
+
+                <div class="flex items-center space-x-1">
+                   <NuxtLink
+                     to="/login" 
+                     :class="linkClass"
+                     >
+                     Log in
+                    </NuxtLink>
+                    <Icon name="heroicons:arrow-right-20-solid" class="text-xl text-purple-500" />
+                </div>
+
+            </div>
+        </div>
+
+    </nav>
+</template>
