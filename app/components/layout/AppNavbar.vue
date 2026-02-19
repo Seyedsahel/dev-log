@@ -11,7 +11,7 @@
 </script>
 
 <template>
-    <nav class="bg-zinc-800 shadow-md">
+    <nav class="sticky top-0 z-50 bg-zinc-800 shadow-md">
         <div class=" mx-auto lg:px-14 py-2 px-4">
             <div class="flex items-center justify-between h-16">
 
