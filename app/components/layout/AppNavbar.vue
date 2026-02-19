@@ -27,6 +27,12 @@
                      >
                      Home
                     </NuxtLink>
+                     <NuxtLink
+                     to="/#posts" 
+                     :class="isActive('/#posts') ? activeLinkClass : linkClass"
+                     >
+                     Posts
+                    </NuxtLink>
                     <NuxtLink
                      to="/dashboard" 
                      :class="isActive('/dashboard') ? activeLinkClass : linkClass"
