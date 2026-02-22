@@ -6,3 +6,8 @@ export interface PostType  {
   date: string;
   tags: string[];
 };
+
+
+export interface PostListResponse{
+  posts: PostType[]
+}

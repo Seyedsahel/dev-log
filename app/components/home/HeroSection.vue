@@ -6,7 +6,7 @@
 
         <div id="texts" class=" flex flex-col justify-center items-center text-center px-6">
                     
-            <h1 class="text-9xl font-bold mb-8 text-purple-500">
+            <h1 class="md:text-9xl text-6xl font-bold mb-8 text-purple-500">
                 DevLog
             </h1>
 
