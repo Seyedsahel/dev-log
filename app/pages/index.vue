@@ -12,8 +12,8 @@ const {posts} = storeToRefs(postStore)
     <div>
       <HomeHeroSection/>
       <section id="posts" class="mx-4 py-8">
-        <div class=" mt-2 grid grid-cols-1 md:grid-cols-4 space-y-4 md:gap-6">
-          <div v-for="post in posts" :key="post.id" >
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
+          <div v-for="post in posts" :key="post.id"  >
             <HomePostItem :post="post"/>
           </div>
         </div>

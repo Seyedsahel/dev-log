@@ -11,7 +11,7 @@ export const posts = [
     id: 2,
     userId: 102,
     title: "Tailwind CSS for Real Projects",
-    content: "Tips and tricks for using Tailwind CSS in large-scale projects.",
+    content: "Tips and tricks for using Tailwind CSS inTips and tricks for using Tailwind CSS inTips and tricks for using Tailwind CSS inTips and tricks for using Tailwind CSS inTips and tricks for using Tailwind CSS inTips and tricks for using Tailwind CSS in large-scale projects.",
     date: "2026-02-19",
     tags: ["Tailwind", "CSS", "Design"]
   },
